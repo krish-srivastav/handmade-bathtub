@@ -61,3 +61,5 @@ This prototype uses browser localStorage and does not include authentication, a 
 - `artifact/social-post.html` — social visual
 
 stone first
+
+> Prototype status: inquiry capture, qualification rules, buyer prioritisation and recommended next actions are implemented.
