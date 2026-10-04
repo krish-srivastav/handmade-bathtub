@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Handmade Bathtub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+    <div class="logo">
+        HANDMADE BATHTUB
+    </div>
+
+    <div>
+        <a href="dashboard.html">
+            Inquiry Desk
+        </a>
+
+        &nbsp;&nbsp;
+
+        <a href="#inquiry">
+            Request a Quote
+        </a>
+    </div>
+
+</header>
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">HANDMADE • NATURAL STONE</p>
+
+                <h1>
+                    Stone,<br>
+                    shaped by hand.
+                </h1>
+
+                <p class="description">
+                    A considered natural-stone piece designed
+                    for premium residential and hospitality spaces.
+                </p>
+
+                <a href="#inquiry" class="button">
+                    Request a consultation / quote
+                </a>
+
+            </div>
+
+
+            <div class="product-visual">
+
+                <div class="stone-basin"></div>
+
+                <p>EX-B01</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCT -->
+
+        <section class="product">
+
+            <p class="eyebrow">THE PRODUCT</p>
+
+            <h2>EX-B01</h2>
+
+            <p>
+                Handmade natural-stone basin.
+            </p>
+
+            <div class="details">
+
+                <div>
+                    <span>SIZE</span>
+                    <strong>40 cm</strong>
+                </div>
+
+                <div>
+                    <span>FINISH</span>
+                    <strong>Matte</strong>
+                </div>
+
+                <div>
+                    <span>COLOUR</span>
+                    <strong>Natural Beige</strong>
+                </div>
+
+            </div>
+
+            <p class="note">
+                Natural stone can vary in colour and appearance.
+            </p>
+
+        </section>
+
+
+        <!-- BUYER JOURNEY -->
+
+        <section class="journey">
+
+            <p class="eyebrow">HOW IT WORKS</p>
+
+            <h2>
+                From idea to<br>
+                consultation.
+            </h2>
+
+            <div class="steps">
+
+                <div>
+                    <span>01</span>
+                    <h3>Tell us about your project</h3>
+                    <p>
+                        Share your requirements, quantity,
+                        destination and timeline.
+                    </p>
+                </div>
+
+                <div>
+                    <span>02</span>
+                    <h3>We review the details</h3>
+                    <p>
+                        Missing information is clarified
+                        before anything is promised.
+                    </p>
+                </div>
+
+                <div>
+                    <span>03</span>
+                    <h3>Consultation / quote</h3>
+                    <p>
+                        The next step is agreed once
+                        the project requirements are clear.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INQUIRY -->
+
+        <section id="inquiry" class="inquiry">
+
+            <div>
+
+                <p class="eyebrow">START A CONVERSATION</p>
+
+                <h2>
+                    Tell us about<br>
+                    your project.
+                </h2>
+
+                <p>
+                    We use the information to understand
+                    what needs to be confirmed before
+                    moving toward a consultation or quote.
+                </p>
+
+            </div>
+
+
+            <form id="inquiryForm">
+
+                <label>
+                    Your name
+                    <input
+                        type="text"
+                        id="name"
+                        required
+                    >
+                </label>
+
+
+                <label>
+                    You are a
+                    <select id="buyerType">
+                        <option>Homeowner</option>
+                        <option>Interior Designer</option>
+                        <option>Hotel / Hospitality</option>
+                    </select>
+                </label>
+
+
+                <label>
+                    Quantity
+                    <input
+                        type="number"
+                        id="quantity"
+                        min="1"
+                        value="1"
+                    >
+                </label>
+
+
+                <label>
+                    Destination
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="City / country"
+                    >
+                </label>
+
+
+                <label>
+                    Required date
+                    <input
+                        type="date"
+                        id="date"
+                    >
+                </label>
+
+
+                <label>
+                    Approximate budget
+                    <input
+                        type="text"
+                        id="budget"
+                        placeholder="Optional"
+                    >
+                </label>
+
+
+                <label class="full">
+                    What would you like to know?
+                    <textarea
+                        id="message"
+                        required
+                    ></textarea>
+                </label>
+
+
+                <button type="submit">
+                    Submit inquiry
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Handmade Bathtub · Assignment prototype
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

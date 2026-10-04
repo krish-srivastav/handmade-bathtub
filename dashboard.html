@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inquiry Desk</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+        <div class="logo">
+            HANDMADE BATHTUB
+        </div>
+
+        <a href="index.html">
+            ← Product
+        </a>
+
+    </header>
+
+
+
+    <main class="dashboard">
+
+
+        <p class="eyebrow">
+            INQUIRY MANAGEMENT
+        </p>
+
+
+        <h1>
+            Inquiry Desk
+        </h1>
+
+
+        <p class="dashboard-intro">
+            Review buyer requests, identify missing information
+            and decide the next appropriate action.
+        </p>
+
+
+
+        <!-- LIVE INQUIRY -->
+
+        <section class="latest-inquiry">
+
+            <div class="latest-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        LIVE DEMO
+                    </p>
+
+                    <h2>
+                        Latest inquiry
+                    </h2>
+
+                </div>
+
+                <span id="liveStatus" class="status qualified">
+                    NEW
+                </span>
+
+            </div>
+
+
+            <div id="latestInquiryContent">
+
+                <p>
+                    No new inquiry submitted yet.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- BUYER PRIORITY -->
+
+        <section class="buyer-priority">
+
+            <p class="eyebrow">
+                BUYER PRIORITY
+            </p>
+
+            <h2>
+                Who should we pursue first?
+            </h2>
+
+            <p class="priority-intro">
+                Prioritisation is based on product fit, project potential
+                and feasibility — not just order size.
+            </p>
+
+
+            <div class="buyer-grid">
+
+
+                <!-- P01 -->
+
+                <article class="buyer-card top-priority">
+
+                    <div class="buyer-number">
+                        01
+                    </div>
+
+                    <div class="priority-label">
+                        HIGHEST PRIORITY
+                    </div>
+
+                    <h3>
+                        P01 · Interior Designer
+                    </h3>
+
+                    <p>
+                        Premium residential project with a strong fit
+                        for the product. Requires two units and has
+                        a 60-day timeline.
+                    </p>
+
+                    <div class="buyer-reason">
+
+                        <strong>Why first?</strong>
+
+                        Strong product fit with enough project context
+                        to justify moving toward a consultation.
+
+                    </div>
+
+                    <div class="buyer-next">
+
+                        <strong>Ask next</strong>
+
+                        Exact dimensions, installation requirements
+                        and budget confirmation.
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- P02 -->
+
+                <article class="buyer-card">
+
+                    <div class="buyer-number">
+                        02
+                    </div>
+
+                    <div class="priority-label">
+                        HIGH POTENTIAL
+                    </div>
+
+                    <h3>
+                        P02 · Boutique Hotel
+                    </h3>
+
+                    <p>
+                        Potentially significant requirement of
+                        twelve units, but the requested ten-day
+                        timeline needs feasibility confirmation.
+                    </p>
+
+                    <div class="buyer-reason">
+
+                        <strong>Why second?</strong>
+
+                        Larger potential order, but more uncertainty
+                        around timeline and project requirements.
+
+                    </div>
+
+                    <div class="buyer-next">
+
+                        <strong>Ask next</strong>
+
+                        Destination, budget, exact dimensions
+                        and required delivery date.
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- P03 -->
+
+                <article class="buyer-card">
+
+                    <div class="buyer-number">
+                        03
+                    </div>
+
+                    <div class="priority-label">
+                        LOWER FIT
+                    </div>
+
+                    <h3>
+                        P03 · Homeowner
+                    </h3>
+
+                    <p>
+                        One-unit request with a ₹5,000 budget
+                        and a three-day delivery requirement.
+                    </p>
+
+                    <div class="buyer-reason">
+
+                        <strong>Why third?</strong>
+
+                        Budget and timeline create significant
+                        feasibility questions.
+
+                    </div>
+
+                    <div class="buyer-next">
+
+                        <strong>Ask next</strong>
+
+                        Destination and whether the budget
+                        and timeline can move.
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+        <!-- INQUIRY SUMMARY -->
+
+<section class="inquiry-summary">
+
+    <p class="eyebrow">INQUIRY OVERVIEW</p>
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <span class="summary-number" id="totalInquiries">0</span>
+            <span class="summary-label">TOTAL INQUIRIES</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-number" id="highPriority">0</span>
+            <span class="summary-label">HIGH PRIORITY</span>
+        </div>
+
+        <div class="summary-card">
+            <span class="summary-number" id="needsConfirmation">0</span>
+            <span class="summary-label">NEEDS CONFIRMATION</span>
+        </div>
+
+    </div>
+
+</section>
+        <!-- AUTOMATION WORKFLOW -->
+
+        <section class="automation-workflow">
+
+            <p class="eyebrow">
+                AUTOMATION WORKFLOW
+            </p>
+
+            <h2>
+                From inquiry to next action
+            </h2>
+
+            <p class="workflow-intro">
+                The system turns a raw customer inquiry into a structured
+                decision and recommends the next business action.
+            </p>
+
+            <div class="workflow-steps">
+
+                <div class="workflow-step">
+                    <span>01</span>
+                    <h3>Capture</h3>
+                    <p>
+                        Customer submits product, quantity, destination,
+                        timeline, budget and message.
+                    </p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>02</span>
+                    <h3>Qualify</h3>
+                    <p>
+                        The system checks whether required information
+                        is available.
+                    </p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>03</span>
+                    <h3>Decide</h3>
+                    <p>
+                        Rules identify missing information, urgent
+                        requests or inquiries ready for review.
+                    </p>
+                </div>
+
+                <div class="workflow-arrow">→</div>
+
+                <div class="workflow-step">
+                    <span>04</span>
+                    <h3>Recommend</h3>
+                    <p>
+                        The dashboard automatically recommends the
+                        next action for the business.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="automation-rule-box">
+
+                <div>
+                    <strong>Example automation logic</strong>
+                    <p>
+                        Missing destination, date or budget
+                        → request the missing information.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>Urgent request</strong>
+                    <p>
+                        Short delivery requirement
+                        → confirm feasibility before making promises.
+                    </p>
+                </div>
+
+                <div>
+                    <strong>Complete inquiry</strong>
+                    <p>
+                        Required information available
+                        → move toward consultation / quote.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TEST CASES -->
+
+        <p class="eyebrow">
+            TEST CASES
+        </p>
+
+
+        <div class="inquiry-list">
+
+
+            <!-- L01 -->
+
+            <article class="inquiry-card">
+
+                <div class="inquiry-top">
+
+                    <div>
+
+                        <span class="inquiry-id">
+                            L01 · C001
+                        </span>
+
+                        <h2>
+                            Interior designer · Pune
+                        </h2>
+
+                    </div>
+
+                    <span class="status qualified">
+                        QUALIFIED
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Wants two EX-B01 basins for a residential
+                    project. Approximate budget ₹15,000 per unit.
+                </p>
+
+
+                <div class="inquiry-details">
+
+                    <div>
+                        <span>CHANNEL</span>
+                        Instagram
+                    </div>
+
+                    <div>
+                        <span>QUANTITY</span>
+                        2
+                    </div>
+
+                    <div>
+                        <span>TIMELINE</span>
+                        60 days
+                    </div>
+
+                </div>
+
+
+                <div class="next-action">
+
+                    <strong>
+                        Next action
+                    </strong>
+
+                    Confirm exact dimensions and installation
+                    requirements, then move toward
+                    consultation / quote.
+
+                </div>
+
+            </article>
+
+
+
+            <!-- L02 -->
+
+            <article class="inquiry-card">
+
+                <div class="inquiry-top">
+
+                    <div>
+
+                        <span class="inquiry-id">
+                            L02 · C001
+                        </span>
+
+                        <h2>
+                            Duplicate inquiry
+                        </h2>
+
+                    </div>
+
+                    <span class="status duplicate">
+                        DUPLICATE
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Same buyer and request as L01,
+                    submitted through the website.
+                </p>
+
+
+                <div class="next-action">
+
+                    <strong>
+                        Next action
+                    </strong>
+
+                    Keep the record for traceability,
+                    but do not send the same response twice.
+                    Link this inquiry to L01.
+
+                </div>
+
+            </article>
+
+
+
+            <!-- L03 -->
+
+            <article class="inquiry-card">
+
+                <div class="inquiry-top">
+
+                    <div>
+
+                        <span class="inquiry-id">
+                            L03 · C002
+                        </span>
+
+                        <h2>
+                            Two-basin request
+                        </h2>
+
+                    </div>
+
+                    <span class="status missing">
+                        MISSING INFO
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Buyer wants two basins but has not provided
+                    enough project information.
+                </p>
+
+
+                <div class="next-action">
+
+                    <strong>
+                        Next action
+                    </strong>
+
+                    Ask for destination, required date
+                    and approximate budget.
+
+                </div>
+
+            </article>
+
+
+
+            <!-- L04 -->
+
+            <article class="inquiry-card">
+
+                <div class="inquiry-top">
+
+                    <div>
+
+                        <span class="inquiry-id">
+                            L04 · C003
+                        </span>
+
+                        <h2>
+                            Urgent delivery request
+                        </h2>
+
+                    </div>
+
+                    <span class="status urgent">
+                        NEEDS CONFIRMATION
+                    </span>
+
+                </div>
+
+
+                <p>
+                    One basin, ₹5,000 budget and delivery
+                    requested within three days.
+                </p>
+
+
+                <div class="next-action">
+
+                    <strong>
+                        Next action
+                    </strong>
+
+                    Do not promise delivery or invent a discount.
+                    Confirm destination and feasibility first.
+
+                </div>
+
+            </article>
+
+
+
+            <!-- L05 -->
+
+            <article class="inquiry-card">
+
+                <div class="inquiry-top">
+
+                    <div>
+
+                        <span class="inquiry-id">
+                            L05 · C004
+                        </span>
+
+                        <h2>
+                            Warranty & stock request
+                        </h2>
+
+                    </div>
+
+                    <span class="status missing">
+                        NEEDS CONFIRMATION
+                    </span>
+
+                </div>
+
+
+                <p>
+                    Buyer asks for a 10-year warranty certificate
+                    and stock availability today.
+                </p>
+
+
+                <div class="next-action">
+
+                    <strong>
+                        Next action
+                    </strong>
+
+                    Verify warranty and stock information.
+                    Do not claim either without confirmation.
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <footer>
+
+        Handmade Bathtub · Assignment prototype
+
+    </footer>
+
+
+
+    <<script>
+        const savedInquiries =
+    JSON.parse(localStorage.getItem("inquiries")) || [];
+
+console.log("Loaded inquiries:", savedInquiries);
+
+const container = document.getElementById(
+    "latestInquiryContent"
+);
+
+
+function getInquiryDecision(inquiry) {
+
+    const missing = [];
+
+    if (!inquiry.destination) {
+        missing.push("destination");
+    }
+
+    if (!inquiry.date) {
+        missing.push("required date");
+    }
+
+    if (!inquiry.budget) {
+        missing.push("budget");
+    }
+
+    // Priority based on buyer type and quantity
+    let priority = "STANDARD";
+
+    if (
+        inquiry.buyerType === "Interior Designer" &&
+        Number(inquiry.quantity) >= 2
+    ) {
+        priority = "HIGH PRIORITY";
+    }
+
+    if (Number(inquiry.quantity) >= 10) {
+        priority = "HIGH POTENTIAL";
+    }
+
+    // Missing information
+    if (missing.length > 0) {
+        return {
+            status: "MISSING INFORMATION",
+            className: "missing",
+            priority: priority,
+            action:
+                "Ask for: " + missing.join(", ") + "."
+        };
+    }
+
+    // Urgent request
+    if (
+        inquiry.message.toLowerCase().includes("3 days") ||
+        inquiry.message.toLowerCase().includes("three days") ||
+        inquiry.message.toLowerCase().includes("today")
+    ) {
+        return {
+            status: "NEEDS CONFIRMATION",
+            className: "urgent",
+            priority: priority,
+            action:
+                "Confirm feasibility before promising delivery or pricing."
+        };
+    }
+
+    // Complete inquiry
+    return {
+        status: "READY FOR REVIEW",
+        className: "qualified",
+        priority: priority,
+        action:
+            "Review the project details and move toward a consultation / quote."
+    };
+}
+
+
+function renderInquiry(inquiry) {
+
+    const decision = getInquiryDecision(inquiry);
+
+    return `
+        <div class="live-inquiry">
+
+            <div class="live-row">
+                <strong>Inquiry ID</strong>
+                <span>${inquiry.id || "N/A"}</span>
+            </div>
+
+            <div class="live-row">
+                <strong>Buyer</strong>
+                <span>
+                    ${inquiry.name} · ${inquiry.buyerType}
+                </span>
+            </div>
+
+            <div class="live-row">
+                <strong>Destination</strong>
+                <span>
+                    ${inquiry.destination || "Not provided"}
+                </span>
+            </div>
+
+            <div class="live-row">
+                <strong>Quantity</strong>
+                <span>${inquiry.quantity}</span>
+            </div>
+
+            <div class="live-row">
+                <strong>Required date</strong>
+                <span>
+                    ${inquiry.date || "Not provided"}
+                </span>
+            </div>
+
+            <div class="live-row">
+                <strong>Budget</strong>
+                <span>
+                    ${inquiry.budget || "Not provided"}
+                </span>
+            </div>
+
+            <div class="live-message">
+                <strong>Message</strong>
+                <p>${inquiry.message}</p>
+            </div>
+
+            <div class="decision-box">
+
+                <div>
+                    <strong>Status</strong>
+
+                    <span class="status ${decision.className}">
+                        ${decision.status}
+                    </span>
+                </div>
+
+                <div>
+                    <p>
+                        <strong>Priority:</strong>
+                        ${decision.priority}
+                    </p>
+
+                    <strong>Recommended next action</strong>
+
+                    <p>
+                        ${decision.action}
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    `;
+}
+
+
+if (savedInquiries.length > 0) {
+
+    // Show newest inquiry first
+    const newestFirst = [...savedInquiries].reverse();
+
+    container.innerHTML = newestFirst
+        .map(renderInquiry)
+        .join("");
+        const decisions = savedInquiries.map(
+    getInquiryDecision
+);
+
+const highPriorityCount = decisions.filter(
+    decision =>
+        decision.priority === "HIGH PRIORITY" ||
+        decision.priority === "HIGH POTENTIAL"
+).length;
+
+const confirmationCount = decisions.filter(
+    decision =>
+        decision.status === "NEEDS CONFIRMATION"
+).length;
+
+document.getElementById("totalInquiries").textContent =
+    savedInquiries.length;
+
+document.getElementById("highPriority").textContent =
+    highPriorityCount;
+
+document.getElementById("needsConfirmation").textContent =
+    confirmationCount;
+
+} else {
+
+    container.innerHTML = `
+        <div class="live-inquiry">
+            <p>No customer inquiries have been submitted yet.</p>
+        </div>
+    `;
+}
+
+       
+        </script>
+
+
+
+
+</body>
+
+</html>
